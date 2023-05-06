@@ -1,11 +1,10 @@
 import React from 'react'
 import axios from "axios";
-import react ,{useState}from "react";
+import {useState}from "react";
 import './Delete.css'
 import { TextField } from '@mui/material';
 function Delete() {
     const [search,setSearch]=useState("");
-    const [data,setData]=useState([]);
     const searchEntrepreneur=(evt)=>{
         if(evt.key==="Enter")
         {
