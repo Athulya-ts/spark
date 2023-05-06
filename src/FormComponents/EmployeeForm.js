@@ -50,7 +50,7 @@ export default function EmployeeForm() {
         return Object.values(temp).every(x=>x==="")
     }
 
-    const{values,setValues,errors,setErrors,handleInputChange} = useForm(initialFValues,true,validate);
+    const{values ,errors,setErrors,handleInputChange} = useForm(initialFValues,true,validate);
     const handleSubmit = e =>{
         e.preventDefault()
         const data={
